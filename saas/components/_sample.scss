@@ -1,0 +1,38 @@
+.section-sample {
+  flex-direction: column;
+  padding-bottom: 94px;
+}
+.sample-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.sample-list {
+  display: flex;
+  justify-content: space-between;
+}
+.sample-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.sample-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.signature {
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+}

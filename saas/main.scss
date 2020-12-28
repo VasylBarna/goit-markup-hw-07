@@ -1,10 +1,19 @@
-@import "./utils/variables.scss";
+@import "./base/normalize";
+@import "./base/base";
+@import "./base/container";
+@import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
-@import "./base/normalize";
-@import "./components/page-header";
 @import "./components/logo";
-
+@import "./components/animations";
+@import "./components/page-header";
+@import "./components/hero";
+@import "./components/feature";
+@import "./components/sample";
+@import "./components/workers";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/portfolio";
 
 // .notification-error {
 //   @extend %notification;
@@ -68,8 +77,8 @@
 //   background-image: url('../images/twitter.svg');
 // }
 
-$socialIcons: "facebook", "github", "linkedin", "twitter", "instagram";
-$techIcons: "html", "css", "js";
+// $socialIcons: "facebook", "github", "linkedin", "twitter", "instagram";
+// $techIcons: "html", "css", "js";
 
-@include generateIcons($socialIcons);
-@include generateIcons($techIcons);
+// @include generateIcons($socialIcons);
+// @include generateIcons($techIcons);

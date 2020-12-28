@@ -1,0 +1,121 @@
+.section-footers {
+  background-color: var(--black-bgc);
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footers {
+  display: flex;
+  align-items: baseline;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-list .item {
+  font-weight: 400;
+  font-style: normal;
+}
+.contacts-list .maps {
+  color: var(--white-button-color);
+}
+.contacts-list a {
+  color: var(--contacts-list-color);
+}
+.contacts-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.sign {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 70px;
+  margin-bottom: 0;
+}
+.sign-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  min-height: 16px;
+}
+.sign .icon {
+  fill: var(--primary-white-color);
+}
+.soc-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.subscribe {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
+}
+.subscribe-title {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.form-footer {
+  display: flex;
+}
+.footer-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-input {
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  min-width: 358px;
+  min-height: 50px;
+  color: var(--contacts-list-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+.subscribe .btn {
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  max-width: 200px;
+  display: flex;
+  color: var(--white-button-color);
+  background-color: var(--accent-button-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.subscribe .send {
+  margin-left: 10px;
+}

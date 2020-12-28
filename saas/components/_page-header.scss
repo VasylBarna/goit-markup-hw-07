@@ -1,3 +1,88 @@
+// .page-header {
+//   background-color: $bg-color;
+// }
 .page-header {
-  background-color: $bg-color;
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 1;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  background-color: var(--white-button-color);
+  border-bottom: 1px solid var(--border-header-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* Site-nav */
+
+.nav-title {
+  display: flex;
+}
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav .current {
+  color: var(--accent-button-color);
+  transition: color 250ms var(--transition-timing-function);
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+  transition: color 250ms var(--transition-timing-function);
+}
+.address-nav {
+  margin-left: auto;
+}
+.address-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--title-text-color);
+  transition: color 250ms var(--transition-timing-function);
+}
+.auth-nav {
+  display: flex;
+}
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+.site-nav a:hover,
+.auth-nav .link:hover,
+.site-nav a:focus,
+.auth-nav .link:focus {
+  color: var(--accent-button-color);
+}
+.site-nav .link.current::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  border-bottom: 4px solid var(--accent-button-color);
+}
+.icon-nav {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.auth-nav .mailto {
+  width: 16px;
+  height: 12px;
+}
+.auth-nav .tel {
+  width: 10px;
+  height: 16px;
 }
