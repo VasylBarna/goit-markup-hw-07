@@ -3,8 +3,7 @@
   padding-bottom: 94px;
 }
 .feature-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row;
 }
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
@@ -28,11 +27,9 @@
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  display: flex;
   background: var(--secondary-white-color);
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
+  @include flex-row;
 }
 .icon-feature {
   width: 70px;

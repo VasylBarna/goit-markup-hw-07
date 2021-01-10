@@ -5,17 +5,14 @@
 .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
-  display: flex;
   color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.17px;
   min-height: 42px;
-  justify-content: center;
-  align-items: center;
+  @include flex-row;
 }
 .clients-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row;
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -23,9 +20,7 @@
 .clients-link {
   width: 170px;
   height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-row;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
