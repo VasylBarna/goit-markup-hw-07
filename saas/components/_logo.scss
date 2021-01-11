@@ -1,34 +1,21 @@
-// .logo {
-//   background-color: red;
-
-//   &:hover {
-//     background-color: orange;
-//   }
-// }
 .logo {
-  color: $accent-button-color;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  color: $accent-button-color;
 }
 .logo-text {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .footer-logo {
-  color: var(--accent-button-color);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  display: block;
+  padding: 0;
   margin-bottom: 20px;
 }
 .text-logo-footer {
-  color: var(--white-button-color);
+  color: $white-button-color;
 }

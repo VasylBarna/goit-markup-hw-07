@@ -22,12 +22,12 @@ img {
 }
 
 .full-document {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   text-decoration: none;
 }

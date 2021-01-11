@@ -2,10 +2,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
   flex-direction: column;
-  background-color: var(--secondary-white-color);
+  background-color: $secondary-white-color;
 }
 .workers-title {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -13,8 +13,7 @@
   margin-bottom: 50px;
 }
 .workers-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-row;
 }
 .workers-list .item {
   width: 270px;
@@ -27,7 +26,7 @@
   margin-right: 30px;
 }
 .name-workers {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -48,33 +47,30 @@
   padding-right: 10px;
   padding-bottom: 30px;
   padding-left: 10px;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
 }
 .description-worker .soc-list {
-  display: flex;
-  justify-content: center;
+  @include flex-row(center);
 }
 .soc-icon {
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-row(center);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
   text-decoration: none;
-  color: var(--icon-color);
-  transition: color 250ms var(--transition-timing-function),
-    background-color 250ms var(--transition-timing-function);
+  color: $icon-color;
+  transition: color 250ms transition-timing-function,
+    background-color 250ms transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $white-button-color;
+    background-color: $accent-button-color;
+  }
 }
 .icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-.soc-icon:hover,
-.soc-icon:focus {
-  color: var(--white-button-color);
-  background-color: var(--accent-button-color);
 }

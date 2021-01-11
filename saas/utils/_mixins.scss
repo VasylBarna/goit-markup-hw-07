@@ -16,7 +16,7 @@
 //   border-top: 1px $type $color;
 //   border-bottom: 1px $type $color;
 // }
-@mixin flex-row ($type: center) {
+@mixin flex-row ($type) {
   display: flex;
   justify-content: $type;
   align-items: center;

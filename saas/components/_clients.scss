@@ -5,11 +5,11 @@
 .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 36px;
   line-height: 1.17px;
   min-height: 42px;
-  @include flex-row;
+  @include flex-row(center);
 }
 .clients-list {
   @extend %flex-row;
@@ -20,21 +20,24 @@
 .clients-link {
   width: 170px;
   height: 90px;
-  @extend %flex-row;
-  border: 1px solid var(--icon-color);
+  @include flex-row(center);
+  border: 1px solid $icon-color;
   border-radius: 4px;
-  color: var(--icon-color);
+  color: $icon-color;
   cursor: pointer;
-  transition: color 250ms var(--transition-timing-function),
-    border-color 250ms var(--transition-timing-function);
+  transition: color 250ms $transition-timing-function,
+    border-color 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-button-color;
+    border-color: $accent-button-color;
+  }
 }
 .clients-icon {
   fill: currentColor;
-}
-.clients-icon:hover,
-.clients-icon:focus,
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-button-color);
-  border-color: var(--accent-button-color);
+  &:hover,
+  &:focus {
+    color: $accent-button-color;
+    border-color: $accent-button-color;
+  }
 }
