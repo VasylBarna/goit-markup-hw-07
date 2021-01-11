@@ -1,15 +1,9 @@
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 87px;
+  @extend %padding-section;
 }
 .clients-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: $primary-text-color;
-  font-size: 36px;
-  line-height: 1.17px;
+  @include title-h2;
   min-height: 42px;
-  @include flex-row(center);
 }
 .clients-list {
   @extend %flex-row;

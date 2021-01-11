@@ -3,12 +3,7 @@
   padding-bottom: 94px;
 }
 .sample-title {
-  color: $primary-text-color;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  @include title-h2;
 }
 .sample-list {
   @extend %flex-row;

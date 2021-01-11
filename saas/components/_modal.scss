@@ -9,32 +9,26 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color 250ms $transition-timing-function;
+  &:focus {
+    border-color: $accent-button-color;
+    outline-style: none;
+    &:focus ~ .mod-icon {
+      fill: $accent-button-color;
+    }
+  }
 }
 .form-btn {
+  @include btn;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 32px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: $white-button-color;
-  background-color: $accent-button-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
+  padding-right: 55px;
+  padding-left: 55px;
   transition: background-color 250ms $transition-timing-function;
   &:hover,
   &:focus {
     background-color: $focus-button-color;
-    cursor: pointer;
   }
 }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -93,7 +87,6 @@
   fill: currentColor;
   transition: color 250ms $transition-timing-function;
 }
-
 .form {
   display: flex;
   flex-direction: column;
@@ -141,13 +134,6 @@
   color: $primary-text-color;
   transition: color 250ms $transition-timing-function;
 }
-.form-input:focus ~ .mod-icon {
-  fill: $accent-button-color;
-}
-.form .form-input:focus {
-  border-color: $accent-button-color;
-  outline-style: none;
-}
 .comment {
   margin-bottom: 20px;
   padding-top: 12px;
@@ -184,14 +170,9 @@ textarea {
 }
 .checkbox-lable {
   margin-bottom: 30px;
-  display: flex;
+  @include flex-row(center);
   cursor: pointer;
-  justify-content: center;
 }
-/* .checkbox {
-  appearance: none;
-  position: absolute;
-} */
 /* .visually-hidden */
 .checkbox {
   position: absolute;
@@ -204,10 +185,18 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  &:checked + .check-icon::before {
+    border-color: $accent-button-color;
+    background-color: $accent-button-color;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-origin: border-box;
+    background-image: url(../images/Vector-check.svg);
+    background-size: contain;
+  }
 }
 .check-icon {
-  display: flex;
-  align-items: center;
+  @extend %flex-row;
   &::before {
     margin-right: 10px;
     display: inline-block;
@@ -221,13 +210,4 @@ textarea {
       background-color 250ms $transition-timing-function,
       background-image 250ms $transition-timing-function;
   }
-}
-.checkbox:checked + .check-icon::before {
-  border-color: $accent-button-color;
-  background-color: $accent-button-color;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-origin: border-box;
-  background-image: url(../images/Vector-check.svg);
-  background-size: contain;
 }

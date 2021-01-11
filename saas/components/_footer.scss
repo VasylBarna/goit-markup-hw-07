@@ -8,7 +8,6 @@
   display: flex;
   align-items: baseline;
 }
-
 .contacts-list {
   display: flex;
   flex-direction: column;
@@ -26,7 +25,6 @@
 .contacts-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .sign {
   margin-top: 0;
   margin-right: 0;
@@ -37,10 +35,7 @@
   margin-top: 0;
   margin-bottom: 20px;
   @extend %flex-row;
-  font-size: 14px;
-  line-height: 1.14px;
-  text-transform: uppercase;
-  color: $primary-white-color;
+  @include title-h3;
   min-height: 16px;
 }
 .sign .icon {
@@ -62,22 +57,10 @@
   margin-left: 0;
   display: block;
   font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: $primary-white-color;
+  @include title-h3;
 }
 .form-footer {
   display: flex;
-}
-.footer-input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
 }
 .footer-input {
   margin-right: 12px;
@@ -93,25 +76,22 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    @extend %flex-row;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .subscribe .btn {
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 28px;
-  max-width: 200px;
-  @include flex-row(center);
-  color: $white-button-color;
-  background-color: $accent-button-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+  @include btn;
 }
 .subscribe .send {
   margin-left: 10px;

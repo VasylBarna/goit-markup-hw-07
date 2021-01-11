@@ -1,23 +1,36 @@
-// @mixin generateIcons($iconList) {
-//   @each $iconName in $iconList {
-//     .icon-#{$iconName} {
-//       background-image: url("../images/#{$iconName}.svg");
-//     }
-//   }
-// }
-
-// @mixin centeredFlex($type: flex) {
-//   display: $type;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// @mixin bordered($color: black, $type: solid) {
-//   border-top: 1px $type $color;
-//   border-bottom: 1px $type $color;
-// }
-@mixin flex-row ($type) {
+@mixin flex-row($type) {
   display: flex;
   justify-content: $type;
   align-items: center;
+}
+@mixin btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 200px;
+  @include flex-row(center);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  color: $white-button-color;
+  background-color: $accent-button-color;
+}
+@mixin title-h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+@mixin title-h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  @include flex-row(center);
+  color: $primary-text-color;
 }
