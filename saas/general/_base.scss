@@ -22,11 +22,18 @@ img {
 }
 .full-document {
   color: $title-text-color;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family-body;
   font-style: normal;
-  font-size: 14px;
+  font-size: $font-size-body;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing-body;
   background-color: $primary-white-color;
   text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }

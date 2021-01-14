@@ -24,16 +24,16 @@
   margin-bottom: 10px;
   color: $primary-text-color;
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-size-btn;
   line-height: 1.19;
   text-align: center;
 }
 .workers p {
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 16px;
+  font-size: $font-size-btn;
   line-height: 1.19;
-  font-weight: 400;
+  font-weight: $font-weight-body;
   text-align: center;
 }
 .description-worker {

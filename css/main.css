@@ -1071,9 +1071,9 @@ textarea {
 }
 
 .footer-input::placeholder {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -1116,7 +1116,6 @@ textarea {
   margin-right: 8px;
 }
 
-/* Button Portfolio*/
 .button-filter {
   padding-top: 6px;
   padding-right: 22px;

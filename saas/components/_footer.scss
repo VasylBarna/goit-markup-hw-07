@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 .contacts-list .item {
-  font-weight: 400;
+  font-weight: $font-weight-body;
   font-style: normal;
 }
 .contacts-list .maps {
@@ -56,7 +56,7 @@
   margin-bottom: 20px;
   margin-left: 0;
   display: block;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   @include title-h3;
 }
 .form-footer {
@@ -77,10 +77,10 @@
   border-radius: 4px;
   background-color: transparent;
   &::placeholder {
-    font-family: Roboto;
+    font-family: $font-family-body;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: $font-weight-body;
+    font-size: $font-size-btn;
     line-height: 1.25;
     @extend %flex-row;
     color: rgba(255, 255, 255, 0.6);
